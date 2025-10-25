@@ -17,7 +17,12 @@
       <div class="navbar">
         <div class="container">
           <a href="index.html" class="logo">ctrl<span>lab</span></a>
-          <nav>
+          <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-nav-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav data-nav-menu>
             <ul>
               <li><a href="index.html">Главная</a></li>
               <li><a href="about.html">О нас</a></li>
@@ -29,6 +34,7 @@
           </nav>
         </div>
       </div>
+      <div class="nav-overlay" data-nav-overlay></div>
     </header>
 
     <main>
@@ -115,30 +121,37 @@
       </section>
     </main>
 
-    <footer>
-      <div class="container footer-grid">
-        <div>
+    <footer class="footer">
+      <div class="container footer-layout">
+        <div class="footer-column footer-column--social">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.behance.net" target="_blank" rel="noopener noreferrer">Behance</a>
+        </div>
+        <div class="footer-brand">
           <a href="index.html" class="logo">ctrl<span>lab</span></a>
-          <p style="margin-top: 1rem; color: var(--color-muted);">
-            Мы верим в синергию дизайна и технологий. Создаём продукты, которые двигают бренды вперёд.
-          </p>
+          <p class="footer-note">Подпишитесь, чтобы получать новости и инсайты от команды.</p>
+          <nav class="footer-nav">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="services.html">Сервисы</a>
+            <a href="projects.html">Проекты</a>
+            <a href="blog.html">Блог</a>
+            <a href="contact.html">Контакты</a>
+          </nav>
+          <form class="footer-form">
+            <input type="email" name="subscribe-email" placeholder="Email*" required />
+            <button type="submit">subscribe</button>
+          </form>
         </div>
-        <div>
-          <h4>Навигация</h4>
-          <ul>
-            <li><a href="services.html">Сервисы</a></li>
-            <li><a href="projects.html">Проекты</a></li>
-            <li><a href="blog.html">Блог</a></li>
-          </ul>
+        <div class="footer-column footer-column--actions">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="contact.html" class="footer-link-accent">Связаться ↗</a>
         </div>
-        <div>
-          <h4>Контакты</h4>
-          <ul>
-            <li><a href="mailto:hello@ctrl-lab.studio">hello@ctrl-lab.studio</a></li>
-            <li><a href="tel:+12345678900">+1 (234) 567 89 00</a></li>
-            <li><span data-year></span> © CTRL Creative Lab</li>
-          </ul>
-        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span data-year></span> Created by CTRL Creative Lab</span>
+        <span>All rights reserved</span>
       </div>
     </footer>
 
