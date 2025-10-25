@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Блог — CTRL Creative Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="container">
+          <a href="index.html" class="logo">ctrl<span>lab</span></a>
+          <nav>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="services.html">Сервисы</a></li>
+              <li><a href="projects.html">Проекты</a></li>
+              <li><a href="blog.html">Блог</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container page-intro">
+        <p class="badge">журнал студии</p>
+        <h1>мы делимся открытиями и инсайтами</h1>
+        <p>
+          Тренды, исследования, заметки с проектов и backstage команды. Всё, что вдохновляет нас и наших клиентов.
+        </p>
+      </section>
+
+      <section class="section" data-label="01 / статьи">
+        <div class="container">
+          <div class="project-grid">
+            <article class="card">
+              <div class="badge-corner">исследование</div>
+              <h3>Как AI меняет процесс дизайна</h3>
+              <p>
+                Делимся подходом к внедрению AI-инструментов в креативные команды и объясняем, почему они усиливают, а не заменяют дизайнеров.
+              </p>
+            </article>
+            <article class="card">
+              <div class="badge-corner">гайд</div>
+              <h3>Запускаем продукт за 12 недель</h3>
+              <p>
+                Рассказываем о нашем подходе к discovery-спринту и делимся чек-листом для подготовительного этапа.
+              </p>
+            </article>
+            <article class="card">
+              <div class="badge-corner">кейc</div>
+              <h3>Ребрендинг для Nova Drinks</h3>
+              <p>
+                Как мы помогли бренду переосмыслить коммуникацию и подготовили цифровую экосистему к международному выходу.
+              </p>
+            </article>
+            <article class="card">
+              <div class="badge-corner">новость</div>
+              <h3>CTRL Creative Lab на фестивале дизайна</h3>
+              <p>
+                Наши дизайнеры представили интерактивную инсталляцию, посвящённую синергии искусственного интеллекта и искусства.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" data-label="02 / рассылка">
+        <div class="container">
+          <div class="contact-panel">
+            <div>
+              <p class="badge">подписка</p>
+              <h2>рассказываем о важном без спама</h2>
+              <p>
+                Раз в две недели делимся свежими заметками, подборками вдохновения и инструментами, которые используем в работе.
+              </p>
+            </div>
+            <form>
+              <input type="email" placeholder="Эл. почта" required />
+              <button type="submit" class="btn btn-primary">подписаться</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="logo">ctrl<span>lab</span></a>
+          <p style="margin-top: 1rem; color: var(--color-muted);">
+            Мы верим в синергию дизайна и технологий. Создаём продукты, которые двигают бренды вперёд.
+          </p>
+        </div>
+        <div>
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="services.html">Сервисы</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li><a href="blog.html">Блог</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="mailto:hello@ctrl-lab.studio">hello@ctrl-lab.studio</a></li>
+            <li><a href="tel:+12345678900">+1 (234) 567 89 00</a></li>
+            <li><span data-year></span> © CTRL Creative Lab</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
