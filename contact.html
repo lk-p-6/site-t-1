@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты — CTRL Creative Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="container">
+          <a href="index.html" class="logo">ctrl<span>lab</span></a>
+          <nav>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="services.html">Сервисы</a></li>
+              <li><a href="projects.html">Проекты</a></li>
+              <li><a href="blog.html">Блог</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container page-intro">
+        <p class="badge">связаться</p>
+        <h1>расскажите о своей задаче</h1>
+        <p>
+          Мы подключаемся к проекту на любом этапе: от идеи до масштабирования. Заполните форму или напишите нам напрямую —
+          ответим в течение рабочего дня.
+        </p>
+      </section>
+
+      <section class="section" data-label="01 / контакты">
+        <div class="container">
+          <div class="contact-panel">
+            <div>
+              <h2>офисы и связь</h2>
+              <ul class="table-list" style="gap: 1rem;">
+                <li>
+                  <div>
+                    <h3>Нью-Йорк</h3>
+                    <span>26th Street, Suite 401</span>
+                  </div>
+                  <span class="badge">EST</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Берлин</h3>
+                    <span>Ritterstraße 12</span>
+                  </div>
+                  <span class="badge">CET</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>email</h3>
+                    <span>hello@ctrl-lab.studio</span>
+                  </div>
+                  <span class="badge">24/7</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>телефон</h3>
+                    <span>+1 (234) 567 89 00</span>
+                  </div>
+                  <span class="badge">10:00 — 19:00</span>
+                </li>
+              </ul>
+            </div>
+            <form>
+              <input type="text" placeholder="Имя" required />
+              <input type="email" placeholder="Эл. почта" required />
+              <input type="text" placeholder="Компания" />
+              <textarea rows="5" placeholder="Кратко опишите задачу"></textarea>
+              <button type="submit" class="btn btn-primary">отправить запрос</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" data-label="02 / FAQ">
+        <div class="container">
+          <h2>частые вопросы</h2>
+          <ul class="table-list">
+            <li>
+              <div>
+                <h3>С какими компаниями вы работаете?</h3>
+                <span>Технологические, потребительские бренды, креативные индустрии, стартапы.</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Как быстро вы подключаетесь?</h3>
+                <span>Discovery-этап можем начать в течение 5 рабочих дней после согласования.</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Работаете ли вы с зарубежными командами?</h3>
+                <span>Да, у нас распределённая команда и опыт ведения проектов в США, Европе и Азии.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="logo">ctrl<span>lab</span></a>
+          <p style="margin-top: 1rem; color: var(--color-muted);">
+            Мы верим в синергию дизайна и технологий. Создаём продукты, которые двигают бренды вперёд.
+          </p>
+        </div>
+        <div>
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="services.html">Сервисы</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li><a href="blog.html">Блог</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="mailto:hello@ctrl-lab.studio">hello@ctrl-lab.studio</a></li>
+            <li><a href="tel:+12345678900">+1 (234) 567 89 00</a></li>
+            <li><span data-year></span> © CTRL Creative Lab</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
