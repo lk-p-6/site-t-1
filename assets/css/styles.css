@@ -1,13 +1,13 @@
 :root {
-  --color-bg: #0f172a;
-  --color-bg-alt: #15213b;
-  --color-panel: rgba(15, 23, 42, 0.72);
-  --color-primary: #5b8def;
-  --color-secondary: #a66cff;
-  --color-accent: #38bdf8;
-  --color-cta: #ff7a4f;
-  --color-text: #f8fafc;
-  --color-muted: #9db4d8;
+  --color-bg: #0f0f0f;
+  --color-bg-alt: #1e1e1e;
+  --color-panel: rgba(30, 30, 30, 0.72);
+  --color-primary: #f94144;
+  --color-secondary: #f7931e;
+  --color-accent: #f7931e;
+  --color-cta: #f94144;
+  --color-text: #ffffff;
+  --color-muted: rgba(255, 255, 255, 0.7);
   --container-width: min(1120px, 90vw);
   --font-heading: 'Bebas Neue', 'Segoe UI', sans-serif;
   --font-body: 'Inter', 'Segoe UI', sans-serif;
@@ -22,9 +22,9 @@
 
 body {
   font-family: var(--font-body);
-  background: radial-gradient(circle at top right, rgba(91, 141, 239, 0.18), transparent 40%),
-    radial-gradient(circle at 20% 15%, rgba(166, 108, 255, 0.16), transparent 45%),
-    radial-gradient(circle at 70% 80%, rgba(56, 189, 248, 0.12), transparent 50%),
+  background: radial-gradient(circle at top right, rgba(249, 65, 68, 0.18), transparent 40%),
+    radial-gradient(circle at 20% 15%, rgba(247, 147, 30, 0.16), transparent 45%),
+    radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.08), transparent 50%),
     var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
@@ -45,9 +45,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
-  background: rgba(15, 23, 42, 0.92);
+  background: rgba(15, 15, 15, 0.92);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .navbar {
@@ -78,8 +78,8 @@ header {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  border: 1px solid rgba(148, 163, 184, 0.2);
-  background: rgba(21, 33, 59, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(30, 30, 30, 0.8);
   display: none;
   align-items: center;
   justify-content: center;
@@ -100,8 +100,8 @@ header {
 }
 
 .nav-toggle[aria-expanded='true'] {
-  background: rgba(91, 141, 239, 0.14);
-  border-color: rgba(91, 141, 239, 0.6);
+  background: rgba(249, 65, 68, 0.14);
+  border-color: rgba(249, 65, 68, 0.6);
 }
 
 .nav-toggle[aria-expanded='true'] span:nth-child(1) {
@@ -142,7 +142,7 @@ nav a {
 .nav-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(10, 15, 28, 0.6);
+  background: rgba(0, 0, 0, 0.6);
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--transition);
@@ -228,7 +228,7 @@ nav a.active::after {
   text-transform: uppercase;
   font-size: 0.9rem;
   transition: transform var(--transition), box-shadow var(--transition);
-  box-shadow: 0 18px 35px rgba(91, 141, 239, 0.18);
+  box-shadow: 0 18px 35px rgba(249, 65, 68, 0.18);
   border: none;
 }
 
@@ -239,7 +239,7 @@ nav a.active::after {
 
 .btn-outline {
   background: transparent;
-  border: 1px solid rgba(148, 163, 184, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.24);
   color: var(--color-text);
 }
 
@@ -261,7 +261,7 @@ nav a.active::after {
   font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 0.3em;
-  color: rgba(148, 163, 184, 0.14);
+  color: rgba(255, 255, 255, 0.14);
 }
 
 .section h2 {
@@ -282,7 +282,7 @@ nav a.active::after {
   background: var(--color-panel);
   padding: 2rem;
   border-radius: 18px;
-  border: 1px solid rgba(148, 163, 184, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   position: relative;
   overflow: hidden;
   transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
@@ -293,15 +293,15 @@ nav a.active::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(91, 141, 239, 0.14), rgba(166, 108, 255, 0.14));
+  background: linear-gradient(135deg, rgba(249, 65, 68, 0.14), rgba(247, 147, 30, 0.14));
   opacity: 0;
   transition: opacity var(--transition);
 }
 
 .card:hover {
   transform: translateY(-6px);
-  border-color: rgba(91, 141, 239, 0.5);
-  box-shadow: 0 22px 48px rgba(15, 23, 42, 0.6);
+  border-color: rgba(249, 65, 68, 0.5);
+  box-shadow: 0 22px 48px rgba(15, 15, 15, 0.6);
 }
 
 .card:hover::after {
@@ -328,8 +328,8 @@ nav a.active::after {
 .quote {
   padding: 4rem;
   border-radius: 20px;
-  border: 1px solid rgba(148, 163, 184, 0.12);
-  background: linear-gradient(145deg, rgba(91, 141, 239, 0.12), rgba(15, 23, 42, 0.85));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(145deg, rgba(249, 65, 68, 0.12), rgba(15, 15, 15, 0.85));
   position: relative;
   overflow: hidden;
 }
@@ -340,7 +340,7 @@ nav a.active::after {
   position: absolute;
   top: -2rem;
   left: 2rem;
-  color: rgba(148, 163, 184, 0.08);
+  color: rgba(255, 255, 255, 0.08);
 }
 
 .quote p {
@@ -359,10 +359,10 @@ nav a.active::after {
 .footer {
   margin-top: 6rem;
   padding: 4rem 0 3rem;
-  background: radial-gradient(circle at 15% -20%, rgba(255, 122, 79, 0.12), transparent 55%),
-    radial-gradient(circle at 85% -10%, rgba(91, 141, 239, 0.16), transparent 50%),
-    linear-gradient(180deg, rgba(6, 10, 18, 0.95) 0%, rgba(5, 7, 14, 0.98) 100%);
-  border-top: 1px solid rgba(148, 163, 184, 0.08);
+  background: radial-gradient(circle at 15% -20%, rgba(247, 147, 30, 0.12), transparent 55%),
+    radial-gradient(circle at 85% -10%, rgba(249, 65, 68, 0.16), transparent 50%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.98) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-grid {
@@ -389,7 +389,7 @@ nav a.active::after {
   font-size: 0.75rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: rgba(148, 163, 184, 0.55);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .footer-links {
@@ -402,7 +402,7 @@ nav a.active::after {
   font-size: 0.95rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(248, 250, 252, 0.75);
+  color: rgba(255, 255, 255, 0.75);
   transition: color var(--transition);
 }
 
@@ -441,7 +441,7 @@ nav a.active::after {
   font-size: 0.9rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(148, 163, 184, 0.65);
+  color: rgba(255, 255, 255, 0.65);
   transition: color var(--transition);
   padding-bottom: 0.3rem;
 }
@@ -471,7 +471,7 @@ nav a.active::after {
   max-width: 460px;
   font-size: 0.95rem;
   letter-spacing: 0.05em;
-  color: rgba(148, 163, 184, 0.75);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .footer-form {
@@ -480,8 +480,8 @@ nav a.active::after {
   gap: 0.5rem;
   padding: 0.5rem;
   border-radius: 999px;
-  background: rgba(15, 23, 42, 0.65);
-  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(30, 30, 30, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(18px);
 }
 
@@ -497,21 +497,21 @@ nav a.active::after {
 }
 
 .footer-form input::placeholder {
-  color: rgba(148, 163, 184, 0.65);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .footer-form button {
   padding: 0.75rem 1.6rem;
   border-radius: 999px;
   border: none;
-  background: linear-gradient(135deg, var(--color-cta), #ff5c3c);
-  color: #120a07;
+  background: linear-gradient(135deg, var(--color-cta), var(--color-secondary));
+  color: var(--color-bg);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   cursor: pointer;
   transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
-  box-shadow: 0 20px 35px rgba(255, 122, 79, 0.25);
+  box-shadow: 0 20px 35px rgba(247, 147, 30, 0.25);
 }
 
 .footer-form button:hover {
@@ -530,8 +530,8 @@ nav a.active::after {
   gap: 0.6rem;
   padding: 0.75rem 1.6rem;
   border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.18);
-  background: rgba(21, 33, 59, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(30, 30, 30, 0.45);
   color: var(--color-text);
   text-transform: uppercase;
   letter-spacing: 0.22em;
@@ -539,8 +539,8 @@ nav a.active::after {
 }
 
 .footer-cta:hover {
-  background: rgba(91, 141, 239, 0.2);
-  border-color: rgba(91, 141, 239, 0.5);
+  background: rgba(249, 65, 68, 0.2);
+  border-color: rgba(249, 65, 68, 0.5);
   transform: translateY(-2px);
 }
 
@@ -556,7 +556,7 @@ nav a.active::after {
   font-size: 0.9rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(148, 163, 184, 0.65);
+  color: rgba(255, 255, 255, 0.65);
   transition: color var(--transition);
 }
 
@@ -575,8 +575,8 @@ nav a.active::after {
   gap: 0.6rem;
   padding: 0.75rem 1.6rem;
   border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  background: linear-gradient(135deg, rgba(91, 141, 239, 0.2), rgba(166, 108, 255, 0.18));
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: linear-gradient(135deg, rgba(249, 65, 68, 0.2), rgba(247, 147, 30, 0.18));
   color: var(--color-text);
   text-transform: uppercase;
   letter-spacing: 0.18em;
@@ -584,7 +584,7 @@ nav a.active::after {
 }
 
 .footer-cta:hover {
-  border-color: rgba(91, 141, 239, 0.6);
+  border-color: rgba(249, 65, 68, 0.6);
   transform: translateY(-2px);
 }
 
@@ -611,7 +611,7 @@ nav a.active::after {
 .footer-bottom {
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(148, 163, 184, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -620,7 +620,7 @@ nav a.active::after {
   font-size: 0.8rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(148, 163, 184, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .badge {
@@ -653,8 +653,8 @@ nav a.active::after {
   align-items: center;
   padding: 1.6rem 2rem;
   border-radius: 16px;
-  background: rgba(15, 23, 42, 0.7);
-  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(30, 30, 30, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .timeline-item strong {
@@ -677,7 +677,7 @@ nav a.active::after {
   position: relative;
   border-radius: 18px;
   overflow: hidden;
-  border: 1px solid rgba(148, 163, 184, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   background: var(--color-panel);
 }
 
@@ -712,8 +712,8 @@ nav a.active::after {
 .stat {
   padding: 2rem;
   border-radius: 18px;
-  background: rgba(91, 141, 239, 0.12);
-  border: 1px solid rgba(91, 141, 239, 0.3);
+  background: rgba(249, 65, 68, 0.12);
+  border: 1px solid rgba(249, 65, 68, 0.3);
   text-align: center;
 }
 
@@ -740,7 +740,7 @@ nav a.active::after {
   border-radius: 18px;
   overflow: hidden;
   background: var(--color-panel);
-  border: 1px solid rgba(148, 163, 184, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   position: relative;
   backdrop-filter: blur(6px);
 }
@@ -775,8 +775,8 @@ nav a.active::after {
   gap: 2rem;
   padding: 2.5rem;
   border-radius: 24px;
-  border: 1px solid rgba(148, 163, 184, 0.12);
-  background: linear-gradient(135deg, rgba(91, 141, 239, 0.14), rgba(15, 23, 42, 0.88));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(135deg, rgba(249, 65, 68, 0.14), rgba(15, 15, 15, 0.88));
 }
 
 .contact-panel form {
@@ -789,8 +789,8 @@ nav a.active::after {
   width: 100%;
   padding: 0.9rem 1.2rem;
   border-radius: 14px;
-  border: 1px solid rgba(148, 163, 184, 0.18);
-  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(30, 30, 30, 0.7);
   color: var(--color-text);
   font-family: inherit;
   resize: vertical;
@@ -799,8 +799,8 @@ nav a.active::after {
 .contact-panel input:focus,
 .contact-panel textarea:focus {
   outline: none;
-  border-color: rgba(91, 141, 239, 0.6);
-  box-shadow: 0 0 0 3px rgba(91, 141, 239, 0.25);
+  border-color: rgba(249, 65, 68, 0.6);
+  box-shadow: 0 0 0 3px rgba(249, 65, 68, 0.25);
 }
 
 .badge-stack {
@@ -811,10 +811,10 @@ nav a.active::after {
 }
 
 .badge-stack .badge {
-  background: rgba(15, 23, 42, 0.6);
+  background: rgba(15, 15, 15, 0.6);
   padding: 0.6rem 1rem;
   border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .clients-grid {
@@ -826,20 +826,20 @@ nav a.active::after {
 .client-card {
   padding: 1.8rem;
   border-radius: 16px;
-  background: rgba(15, 23, 42, 0.65);
-  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(30, 30, 30, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   text-align: center;
   font-family: var(--font-heading);
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(148, 163, 184, 0.55);
+  color: rgba(255, 255, 255, 0.55);
   transition: color var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 
 .client-card:hover {
   color: var(--color-text);
-  border-color: rgba(91, 141, 239, 0.5);
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.6);
+  border-color: rgba(249, 65, 68, 0.5);
+  box-shadow: 0 18px 40px rgba(15, 15, 15, 0.6);
 }
 
 .page-intro {
@@ -868,8 +868,8 @@ nav a.active::after {
 .table-list li {
   padding: 1.4rem 1.8rem;
   border-radius: 16px;
-  border: 1px solid rgba(148, 163, 184, 0.12);
-  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(30, 30, 30, 0.65);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -887,16 +887,16 @@ nav a.active::after {
   right: 1.2rem;
   padding: 0.4rem 0.8rem;
   border-radius: 999px;
-  background: rgba(56, 189, 248, 0.18);
+  background: rgba(247, 147, 30, 0.18);
   color: var(--color-accent);
-  border: 1px solid rgba(56, 189, 248, 0.4);
+  border: 1px solid rgba(249, 65, 68, 0.4);
   font-size: 0.75rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
 .section + .section {
-  border-top: 1px solid rgba(148, 163, 184, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 @media (max-width: 960px) {
@@ -911,9 +911,9 @@ nav a.active::after {
     bottom: 0;
     width: min(320px, 80vw);
     padding: 6rem 2rem 2rem;
-    background: rgba(15, 23, 42, 0.98);
-    border-left: 1px solid rgba(148, 163, 184, 0.12);
-    box-shadow: -12px 0 40px rgba(8, 12, 24, 0.6);
+    background: rgba(15, 15, 15, 0.98);
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: -12px 0 40px rgba(0, 0, 0, 0.6);
     transform: translateX(100%);
     transition: transform var(--transition);
   }
@@ -999,8 +999,8 @@ nav a.active::after {
 
   .footer-form input {
     width: 100%;
-    background: rgba(15, 23, 42, 0.7);
-    border: 1px solid rgba(148, 163, 184, 0.3);
+    background: rgba(30, 30, 30, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.24);
   }
 
   .footer-form button {
