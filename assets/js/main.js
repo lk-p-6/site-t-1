@@ -18,6 +18,7 @@ const closeNav = () => {
   document.body.classList.remove('nav-open');
   if (navToggle) {
     navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.setAttribute('aria-label', 'Открыть меню');
   }
 };
 
@@ -26,6 +27,7 @@ if (navToggle && navMenu) {
     const isOpen = navMenu.classList.toggle('open');
     document.body.classList.toggle('nav-open', isOpen);
     navToggle.setAttribute('aria-expanded', String(isOpen));
+    navToggle.setAttribute('aria-label', isOpen ? 'Закрыть меню' : 'Открыть меню');
   });
 }
 
