@@ -74,7 +74,7 @@ header {
 
 .nav-toggle {
   position: relative;
-  z-index: 1001;
+  z-index: 1100;
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -177,6 +177,15 @@ nav a.active {
 nav a:hover::after,
 nav a.active::after {
   width: 100%;
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 1101;
+  background: rgba(15, 23, 42, 0.9);
+  border-color: rgba(148, 163, 184, 0.32);
 }
 
 .container {
