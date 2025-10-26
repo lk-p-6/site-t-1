@@ -919,9 +919,11 @@ nav a.active::after {
     position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
     width: min(320px, 80vw);
-    padding: 6rem 2.25rem 2.5rem;
+    height: 100vh;
+    height: 100dvh;
+    padding: calc(5rem + env(safe-area-inset-top, 0px)) 2.25rem
+      calc(2.5rem + env(safe-area-inset-bottom, 0px));
     background: rgba(15, 23, 42, 0.98);
     border-left: 1px solid rgba(148, 163, 184, 0.12);
     box-shadow: -12px 0 40px rgba(8, 12, 24, 0.6);
