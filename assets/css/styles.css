@@ -564,6 +564,50 @@ nav a.active::after {
   color: var(--color-text);
 }
 
+.footer-group--cta {
+  align-items: center;
+  text-align: center;
+}
+
+.footer-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: linear-gradient(135deg, rgba(91, 141, 239, 0.2), rgba(166, 108, 255, 0.18));
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.footer-cta:hover {
+  border-color: rgba(91, 141, 239, 0.6);
+  transform: translateY(-2px);
+}
+
+.footer-cta__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: normal;
+  font-size: 1rem;
+}
+
+.footer-email {
+  font-size: 0.9rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  transition: color var(--transition);
+}
+
+.footer-email:hover {
+  color: var(--color-text);
+}
+
 .footer-bottom {
   margin-top: 3rem;
   padding-top: 2rem;
